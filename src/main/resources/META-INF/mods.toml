@@ -1,0 +1,11 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+license = "AGPL v3"
+[[mods]]
+modId = "itemfx"
+version = "1.0.0"
+displayName = "ItemSpecialEffects"
+credits = ""
+authors = "Tapio"
+description = '''
+'''

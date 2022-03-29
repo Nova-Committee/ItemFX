@@ -1,0 +1,10 @@
+{
+  "teleport": {
+    "sounds": [
+      {
+        "name": "itemfx:teleport",
+        "stream": true
+      }
+    ]
+  }
+}

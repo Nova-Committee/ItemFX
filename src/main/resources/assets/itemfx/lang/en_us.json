@@ -1,0 +1,14 @@
+{
+  "death.attack.unSeenHand": "%1$s was erasured by an unseen hand",
+  "death.attack.bloodSucking": "%1$s was drained of blood by a cursed item",
+  "item.itemfx.identify_scroll": "Identify Scroll",
+  "msg.itemfx.already_identified": "The off-hand item has already been identified",
+  "msg.itemfx.identified": "{0} was identified to be {1}",
+  "msg.itemfx.effect_set": "{0} was set to be {1}",
+  "msg.itemfx.invalid_stack": "The off-hand item cannot be identified",
+  "tooltip.itemfx.unidentified": "Unidentified",
+  "tooltip.itemfx.effect.0": "Normal",
+  "tooltip.itemfx.effect.1": "§aBlessed§r",
+  "tooltip.itemfx.effect.2": "§4Curse§r",
+  "tooltip.itemfx.effect.3": "§5Doomed§r"
+}

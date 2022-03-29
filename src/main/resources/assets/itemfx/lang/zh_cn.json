@@ -1,0 +1,14 @@
+{
+  "death.attack.unSeenHand": "%1$s被无形的手埋葬了",
+  "death.attack.bloodSucking": "%1$s的血液被诅咒的物品吸干了",
+  "item.itemfx.identify_scroll": "鉴定卷轴",
+  "msg.itemfx.already_identified": "副手物品之前已被鉴定",
+  "msg.itemfx.identified": "{0}被判明为{1}",
+  "msg.itemfx.effect_set": "{0}被设定为{1}",
+  "msg.itemfx.invalid_stack": "副手物品不能被鉴定",
+  "tooltip.itemfx.unidentified": "未鉴定",
+  "tooltip.itemfx.effect.0": "普通的",
+  "tooltip.itemfx.effect.1": "§a祝福的§r",
+  "tooltip.itemfx.effect.2": "§4诅咒的§r",
+  "tooltip.itemfx.effect.3": "§5堕落的§r"
+}
