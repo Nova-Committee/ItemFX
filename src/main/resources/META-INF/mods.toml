@@ -3,9 +3,9 @@ loaderVersion = "[40,)"
 license = "AGPL v3"
 [[mods]]
 modId = "itemfx"
-version = "1.0.0"
+version = "${file.jarVersion}"
 displayName = "ItemSpecialEffects"
-credits = ""
+credits = "Elona and her author Noa, for providing ideas and resources"
 authors = "Tapio"
 description = '''
 '''

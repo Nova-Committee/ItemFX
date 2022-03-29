@@ -14,9 +14,9 @@ apply plugin: 'idea'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.18.2-1.0.0'
+version = "${version}"
 group = 'committee.nova.itemfx'
-archivesBaseName = 'ItemSpecialEffects'
+archivesBaseName = 'ItemSpecialEffects-Forge'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
