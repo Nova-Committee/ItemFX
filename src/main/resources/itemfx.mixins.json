@@ -3,6 +3,7 @@
   "package": "committee.nova.itemfx.common.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "MixinEnchantmentHelper",
     "MixinLivingEntity"
   ],
   "injectors": {
