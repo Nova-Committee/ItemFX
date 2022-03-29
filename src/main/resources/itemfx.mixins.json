@@ -9,6 +9,6 @@
   "injectors": {
     "defaultRequire": 1
   },
-  "refmap": "drinkit.mixin-refmap.json",
+  "refmap": "itemfx.mixin-refmap.json",
   "minVersion": "0.8"
 }
