@@ -39,7 +39,7 @@ public class LivingUpdateHandler {
         final NonNullList<ItemStack> inv = player.getInventory().items;
         for (final ItemStack stack : inv) {
             final CompoundTag tag = stack.getOrCreateTag();
-            if (!tag.getBoolean(IDENTIFIED)) {
+            if (!tag.getBoolean(IDENTIFIED) && !stackNoEffect(stack)) {
                 identify(stack, player, true);
                 return;
             }
