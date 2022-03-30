@@ -16,7 +16,7 @@ apply plugin: 'org.spongepowered.mixin'
 
 version = "${version}"
 group = 'committee.nova.itemfx'
-archivesBaseName = 'ItemSpecialEffects-Forge'
+archivesBaseName = 'ItemFX-Forge'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
