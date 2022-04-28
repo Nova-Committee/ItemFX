@@ -1,5 +1,7 @@
 package committee.nova.itemfx.common.tool;
 
+import committee.nova.itemfx.common.ItemFx;
+import committee.nova.itemfx.common.config.Configuration;
 import committee.nova.itemfx.common.sound.init.SoundInit;
 import committee.nova.itemfx.common.util.TagReference;
 import net.minecraft.Util;
@@ -8,8 +10,11 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -27,6 +32,9 @@ import static committee.nova.itemfx.common.util.TagReference.*;
 public class GenericHandler {
     public static final DamageSource UNSEEN_HAND = new DamageSource("unSeenHand").bypassArmor().bypassInvul();
     public static final DamageSource BLOOD_SUCKING = new DamageSource("bloodSucking").bypassArmor().bypassInvul();
+
+    public static final TagKey<Item> BLACKLIST = ItemTags.create(new ResourceLocation(ItemFx.MODID, "blacklist"));
+    public static final TagKey<Item> WHITELIST = ItemTags.create(new ResourceLocation(ItemFx.MODID, "whitelist"));
 
     public static void killPlayerByUnseenHand(Player player) {
         player.hurt(UNSEEN_HAND, Float.MAX_VALUE);
@@ -57,6 +65,8 @@ public class GenericHandler {
 
     public static void decideItemEffect(Player player, ItemStack stack) {
         if (stackNoEffect(stack)) return;
+        if (Configuration.blackListItem.get() && stack.is(BLACKLIST)) return;
+        if (Configuration.whiteListItem.get() && !stack.is(WHITELIST)) return;
         final CompoundTag tag = stack.getOrCreateTag();
         if (tag.getBoolean(EFFECT_DECIDED)) return;
         final double rarityInfluenced = Math.log10(rarityToInt(stack.getRarity()));
