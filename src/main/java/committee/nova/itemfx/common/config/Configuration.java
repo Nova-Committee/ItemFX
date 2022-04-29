@@ -9,7 +9,7 @@ public class Configuration {
 
     static {
         final ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
-        builder.comment("QuickPlant Configuration");
+        builder.comment("ItemFX Configuration");
         blackListItem = builder.comment("Activate blacklist for item traits by tag 'itemfx:blacklist'. Items in won't have traits")
                 .define("blackList", true);
         whiteListItem = builder.comment("Activate whitelist for item traits by tag 'itemfx:whitelist'. Only items in will have traits")
